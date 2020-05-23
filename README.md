@@ -1,6 +1,7 @@
 # Disaster Response Pipeline Project
 
-## Required libraries
+## Requirements
+- Python 3.6
 - nltk 3.3.0
 - numpy 1.15.2
 - pandas 0.23.4
@@ -31,3 +32,6 @@ Below are a few screenshots of the web app.
 > python train_classifier.py ../data/DisasterResponse.db classifier.pkl
 
 > python run.py
+
+## Acknowledgements
+I wish to thank Figure Eight for dataset, and thank Udacity for advice and review.
