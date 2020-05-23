@@ -1,40 +1,47 @@
 # Disaster Response Pipeline Project
 
-Installation
-Beyond the Anaconda distribution of Python, the following packages need to be installed for nltk:
+## Requirements
+- Python 3.6
+- nltk 3.3.0
+- numpy 1.15.2
+- pandas 0.23.4
+- scikit-learn 0.20.0
+- sqlalchemy 1.2.12
 
-punkt
-wordnet
-stopwords
-Project Motivation
-In this project, I appled data engineering, natural language processing, and machine learning skills to analyze message data that people sent during disasters to build a model for an API that classifies disaster messages. These messages could potentially be sent to appropriate disaster relief agencies.
+## Motivation
+In this project, It will provide disaster responses to analyze data from Figure Eight to build a model for an API that classifies disaster messages.
 
-File Descriptions
-There are three main foleders:
+This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
 
-data
-disaster_categories.csv: dataset including all the categories
-disaster_messages.csv: dataset including all the messages
-process_data.py: ETL pipeline scripts to read, clean, and save data into a database
-DisasterResponse.db: output of the ETL pipeline, i.e. SQLite database containing messages and categories data
-models
-train_classifier.py: machine learning pipeline scripts to train and export a classifier
-classifier.pkl: output of the machine learning pipeline, i.e. a trained classifer
-app
-run.py: Flask file to run the web application
-templates contains html file for the web applicatin
-Results
-An ETL pipleline was built to read data from two csv files, clean data, and save data into a SQLite database.
-A machine learning pipepline was developed to train a classifier to performs multi-output classification on the 36 categories in the dataset.
-A Flask app was created to show data visualization and classify the message that user enters on the web page.
-Licensing, Authors, Acknowledgements
-Credits must be given to Udacity for the starter codes and FigureEight for provding the data used by this project.
 
-Instructions:
-Run the following commands in the project's root directory to set up your database and model.
+## Project Content
+- Data
+  - process_data.py: reads in the data, cleans and stores it in a SQL database. Basic usage is python process_data.py MESSAGES_DATA CATEGORIES_DATA NAME_FOR_DATABASE
+  - disaster_categories.csv and disaster_messages.csv (dataset)
+  - DisasterResponse.db: created database from transformed and cleaned data.
+- Models
+  - train_classifier.py: includes the code necessary to load data, transform it using natural language processing, run a machine learning model using GridSearchCV and train it. Basic usage is python train_classifier.py DATABASE_DIRECTORY SAVENAME_FOR_MODEL
+- App
+  - run.py: Flask app and the user interface used to predict results and display them.
+  - templates: folder containing the html templates
 
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. python run.py
+## Example:
+> python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
 
-Go to http://0.0.0.0:3001/
+> python train_classifier.py ../data/DisasterResponse.db classifier.pkl
+
+> python run.py
+
+Live Application URL: https://view6914b2f4-3001.udacity-student-workspaces.com/
+
+## Screenshots
+Below are a few screenshots of the web app:
+
+> The main page shows some graphs about training dataset, provided by Figure Eight.
+
+> Here is the text box that you can type to test Machine Learning model performance.
+
+> After clicking Classify Message button, you can see the categories which the message predicted by Machine Learning Model highlighted in green
+
+## Acknowledgements
+I wish to thank Figure Eight for dataset, and thank Udacity for advice and review.
