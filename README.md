@@ -41,13 +41,13 @@ Below are a few screenshots of the web app:
 ![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_1.JPG?raw=true "Screenshot1")
 
 > Here is the text box that you can type to test Machine Learning model performance.
-![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_2.JPG?raw=true "Screenshot1")
+![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_2.JPG?raw=true "Screenshot2")
 
 > After typing example message "there is a fire starting in my house, please help me!" and clicking Classify Message button, you can see the categories which the message predicted by Machine Learning Model highlighted in green.
-![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_1.JPG?raw=true "Screenshot3")
+![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_3.JPG?raw=true "Screenshot3")
 
 > After typing example message "my leg is broken, call doctor" and clicking Classify Message button, you can see the categories which the message predicted by Machine Learning Model highlighted in green.
-![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_1.JPG?raw=true "Screenshot4")
+![Alt text](https://github.com/ISMAILHKYILDIZ/Udacity-DataScientist-ND---Project-2---Disaster-Response-Pipeline/blob/master/Web_App_ScreenShot_4.JPG?raw=true "Screenshot4")
 
 ## Acknowledgements
 I wish to thank Figure Eight for dataset, and thank Udacity for advice and review.
