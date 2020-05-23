@@ -13,7 +13,6 @@ In this project, It will provide disaster responses to analyze data from Figure 
 
 This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
 
-Below are a few screenshots of the web app.
 
 ## Project Content
 - Data
@@ -34,6 +33,15 @@ Below are a few screenshots of the web app.
 > python run.py
 
 Live Application URL: https://view6914b2f4-3001.udacity-student-workspaces.com/
+
+## Screenshots
+Below are a few screenshots of the web app:
+
+> The main page shows some graphs about training dataset, provided by Figure Eight.
+
+> Here is the text box that you can type to test Machine Learning model performance.
+
+> After clicking Classify Message button, you can see the categories which the message predicted by Machine Learning Model highlighted in green
 
 ## Acknowledgements
 I wish to thank Figure Eight for dataset, and thank Udacity for advice and review.
